@@ -15,7 +15,7 @@ export default function Header() {
       <div className="flex w-full max-w-[1576px] items-center justify-between rounded-[12px] border border-[rgba(239,235,214,0.61)] bg-[rgba(255,255,255,0.86)] px-6 py-4 backdrop-blur-[6.45px] lg:px-8 lg:py-6">
         <Link href="/" className="shrink-0">
           <Image
-            src="/images/logo.png"
+            src="/images/logo.svg"
             alt="DG Tech"
             width={137}
             height={43}
