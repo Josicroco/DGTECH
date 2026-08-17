@@ -37,7 +37,7 @@ export default function QuickLinks() {
         {CARDS.map((card) => (
           <div
             key={card.title}
-            className="flex w-full flex-col items-start justify-between lg:w-[320px]"
+            className="flex w-full flex-col items-start lg:w-[320px]"
           >
             <div className="flex w-full flex-col items-start gap-[22px]">
               <div className="flex flex-col items-start gap-[16px]">
@@ -61,7 +61,7 @@ export default function QuickLinks() {
             </div>
             <a
               href={card.href}
-              className={`text-[14px] font-bold ${card.ctaColor} transition-opacity hover:opacity-70`}
+              className={`mt-[41px] text-[14px] font-bold ${card.ctaColor} transition-opacity hover:opacity-70`}
             >
               {card.cta}
             </a>
