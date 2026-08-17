@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Reveal from "@/components/Reveal";
 
 const SERVICES = [
   {
@@ -49,17 +50,25 @@ export default function Services() {
       id="servicos"
       className="mx-auto w-full max-w-[1280px] px-6 py-16 lg:px-0 lg:py-[100px]"
     >
-      <p className="font-mono text-[13px] font-medium tracking-[1.4px] text-[#998200] uppercase">
+      <Reveal
+        as="p"
+        className="font-mono text-[13px] font-medium tracking-[1.4px] text-[#998200] uppercase"
+      >
         Serviços
-      </p>
-      <h2 className="mt-[16px] text-[32px] tracking-[-0.6px] text-[#1c1c18] lg:text-[42px]">
+      </Reveal>
+      <Reveal
+        as="h2"
+        delay={80}
+        className="mt-[16px] text-[32px] tracking-[-0.6px] text-[#1c1c18] lg:text-[42px]"
+      >
         Áreas de atuação
-      </h2>
+      </Reveal>
 
       <div className="mt-[45px] grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-4">
-        {SERVICES.map((service) => (
-          <div
+        {SERVICES.map((service, index) => (
+          <Reveal
             key={service.title}
+            delay={(index % 4) * 80}
             className="rounded-[12px] border-[0.96px] border-[#f0ecd6] bg-white p-[27px]"
           >
             <div className="flex size-[44.2px] items-center justify-center rounded-[10.6px] bg-[#fff7cc]">
@@ -71,7 +80,7 @@ export default function Services() {
             <p className="mt-[12px] text-[13.9px] leading-[21.6px] text-[#54564c]">
               {service.text}
             </p>
-          </div>
+          </Reveal>
         ))}
       </div>
     </section>

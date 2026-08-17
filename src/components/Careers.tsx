@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Reveal from "@/components/Reveal";
 
 export default function Careers() {
   return (
@@ -8,13 +9,23 @@ export default function Careers() {
     >
       <div className="grid gap-10 overflow-hidden rounded-[12px] bg-[#ffd900] p-8 lg:grid-cols-2 lg:gap-0 lg:p-[78px_83px_78px_109px]">
         <div className="flex flex-col justify-center">
-          <p className="font-mono text-[12px] font-medium tracking-[1.4px] text-[#241e00] uppercase">
+          <Reveal
+            as="p"
+            className="font-mono text-[12px] font-medium tracking-[1.4px] text-[#241e00] uppercase"
+          >
             {"//Trabalhe Conosco"}
-          </p>
-          <h2 className="mt-[26px] text-[32px] tracking-[-0.6px] text-[#241e00] lg:text-[42px]">
+          </Reveal>
+          <Reveal
+            as="h2"
+            delay={80}
+            className="mt-[26px] text-[32px] tracking-[-0.6px] text-[#241e00] lg:text-[42px]"
+          >
             Nosso time
-          </h2>
-          <div className="mt-[26px] flex flex-col gap-[28px] text-[16px] leading-[28px] text-[#241e00] lg:text-[18px]">
+          </Reveal>
+          <Reveal
+            delay={160}
+            className="mt-[26px] flex flex-col gap-[28px] text-[16px] leading-[28px] text-[#241e00] lg:text-[18px]"
+          >
             <p>
               A DG Tech é feita de gente que decidiu não seguir o padrão.
               Aqui, honra, resiliência, comprometimento e excelência
@@ -26,10 +37,13 @@ export default function Careers() {
               desejada para se trabalhar no Brasil. Se você se identifica com
               esse propósito, seu lugar pode ser aqui.
             </p>
-          </div>
+          </Reveal>
         </div>
 
-        <div className="mx-auto w-full max-w-[460px] rounded-[20px] bg-white p-6">
+        <Reveal
+          delay={120}
+          className="mx-auto w-full max-w-[460px] rounded-[20px] bg-white p-6"
+        >
           <div className="relative flex flex-col items-center">
             <div className="relative h-[195px] w-full overflow-hidden rounded-[14px]">
               <Image
@@ -67,7 +81,7 @@ export default function Careers() {
               height={13}
             />
           </a>
-        </div>
+        </Reveal>
       </div>
     </section>
   );

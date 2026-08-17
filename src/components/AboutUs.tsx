@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Reveal from "@/components/Reveal";
 
 export default function AboutUs() {
   return (
@@ -8,13 +9,23 @@ export default function AboutUs() {
     >
       <div className="grid gap-12 lg:grid-cols-2 lg:gap-[86px]">
         <div className="flex flex-col items-start">
-          <p className="font-mono text-[13px] font-semibold tracking-[1.4px] text-[#998200] uppercase">
+          <Reveal
+            as="p"
+            className="font-mono text-[13px] font-semibold tracking-[1.4px] text-[#998200] uppercase"
+          >
             {"//Sobre"}
-          </p>
-          <h2 className="mt-[18px] text-[32px] tracking-[-0.6px] text-[#1c1c18] lg:text-[42px]">
+          </Reveal>
+          <Reveal
+            as="h2"
+            delay={80}
+            className="mt-[18px] text-[32px] tracking-[-0.6px] text-[#1c1c18] lg:text-[42px]"
+          >
             Quem somos
-          </h2>
-          <div className="mt-[24px] flex flex-col gap-[23px] text-[16px] leading-[23px] text-[#3b3c35] lg:text-[18px]">
+          </Reveal>
+          <Reveal
+            delay={160}
+            className="mt-[24px] flex flex-col gap-[23px] text-[16px] leading-[23px] text-[#3b3c35] lg:text-[18px]"
+          >
             <p>
               Fundada em 2017, a DG Tech desenvolve e executa projetos
               técnicos de instalações elétricas, automação, cabeamento
@@ -31,10 +42,10 @@ export default function AboutUs() {
               Trabalhamos com certificação e homologação junto aos melhores
               fabricantes do Brasil e do mundo.
             </p>
-          </div>
+          </Reveal>
         </div>
 
-        <div className="flex flex-col gap-[13px]">
+        <Reveal delay={120} className="flex flex-col gap-[13px]">
           <div className="flex gap-[12px]">
             <div className="relative h-[170px] w-[70.8%] overflow-hidden rounded-[14px] sm:h-[225px]">
               <Image
@@ -88,7 +99,7 @@ export default function AboutUs() {
               </div>
             </div>
           </div>
-        </div>
+        </Reveal>
       </div>
     </section>
   );

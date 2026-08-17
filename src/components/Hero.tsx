@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Reveal from "@/components/Reveal";
 
 export default function Hero() {
   return (
@@ -14,25 +15,39 @@ export default function Hero() {
 
       <div className="relative z-10 flex w-full max-w-[764px] flex-col items-center gap-[18px] px-6 text-center">
         <div className="flex w-full flex-col items-center gap-[14px]">
-          <p className="font-mono text-[10px] font-semibold tracking-[1.4px] text-[#fffae6] uppercase">
+          <Reveal
+            as="p"
+            className="font-mono text-[10px] font-semibold tracking-[1.4px] text-[#fffae6] uppercase"
+          >
             {"//Engenharia elétrica & automação"}
-          </p>
-          <h1 className="text-[36px] leading-[1.15] tracking-[-1px] text-white lg:text-[58px] lg:leading-[62.64px]">
+          </Reveal>
+          <Reveal
+            as="h1"
+            delay={80}
+            className="text-[36px] leading-[1.15] tracking-[-1px] text-white lg:text-[58px] lg:leading-[62.64px]"
+          >
             Engenharia elétrica que{" "}
             <span className="font-semibold text-[#ffd900]">
               sustenta grandes operações.
             </span>
-          </h1>
-          <p className="max-w-[552px] text-[16px] leading-[23px] text-white lg:text-[18px]">
+          </Reveal>
+          <Reveal
+            as="p"
+            delay={160}
+            className="max-w-[552px] text-[16px] leading-[23px] text-white lg:text-[18px]"
+          >
             Desde 2017, a DG Tech projeta e executa infraestrutura elétrica,{" "}
             <span className="font-semibold">
               automação e segurança para os maiores sites corporativos e
               galpões logísticos e industriais.
             </span>
-          </p>
+          </Reveal>
         </div>
 
-        <div className="flex flex-wrap items-center justify-center gap-[9px]">
+        <Reveal
+          delay={240}
+          className="flex flex-wrap items-center justify-center gap-[9px]"
+        >
           <a
             href="#sobre"
             className="flex h-[69px] w-[259px] items-center justify-center rounded-[10.469px] border border-[rgba(225,213,48,0.33)] bg-[#ffd900] text-[16px] font-semibold text-[#241e00] transition-opacity hover:opacity-90"
@@ -51,7 +66,7 @@ export default function Hero() {
               height={15}
             />
           </a>
-        </div>
+        </Reveal>
       </div>
     </section>
   );

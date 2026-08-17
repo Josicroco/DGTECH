@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Reveal from "@/components/Reveal";
 
 const STEPS = [
   { number: "01", label: "Entendendo a necessidade do cliente" },
@@ -20,17 +21,25 @@ export default function Process() {
       <div className="absolute inset-0 bg-[rgba(36,30,0,0.57)]" />
 
       <div className="relative z-10 mx-auto flex w-full max-w-[1280px] flex-col items-center px-6 text-center lg:px-0">
-        <p className="font-mono text-[13px] font-medium tracking-[1.4px] text-white uppercase">
+        <Reveal
+          as="p"
+          className="font-mono text-[13px] font-medium tracking-[1.4px] text-white uppercase"
+        >
           {"//trabalho"}
-        </p>
-        <h2 className="mt-[13px] text-[32px] text-white lg:text-[42px]">
+        </Reveal>
+        <Reveal
+          as="h2"
+          delay={80}
+          className="mt-[13px] text-[32px] text-white lg:text-[42px]"
+        >
           Como trabalhamos
-        </h2>
+        </Reveal>
 
         <div className="mt-[60px] grid w-full grid-cols-2 gap-x-6 gap-y-10 sm:grid-cols-3 lg:flex lg:flex-nowrap lg:justify-between">
-          {STEPS.map((step) => (
-            <div
+          {STEPS.map((step, index) => (
+            <Reveal
               key={step.number}
+              delay={index * 80}
               className="flex flex-col items-center gap-[16px] lg:w-[220px]"
             >
               <span className="flex size-[47.4px] items-center justify-center rounded-full bg-[#ffd900] font-mono font-medium text-[17.8px] text-[#241e00]">
@@ -39,7 +48,7 @@ export default function Process() {
               <p className="text-[17.2px] leading-[25.8px] text-white">
                 {step.label}
               </p>
-            </div>
+            </Reveal>
           ))}
         </div>
       </div>
