@@ -50,20 +50,18 @@ export default function Values() {
 
       <div className="mt-[50px] grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-5">
         {VALUES.map((value, index) => (
-          <Reveal
-            key={value.title}
-            delay={index * 130}
-            className="flex flex-col items-start rounded-[12px] border border-[rgba(153,130,0,0.1)] bg-[rgba(255,255,255,0.95)] p-[32px] lg:p-[48px]"
-          >
-            <div className="flex size-[45.7px] items-center justify-center rounded-[10.4px] bg-[#fff099]">
-              <Image src={value.icon} alt="" width={23} height={23} />
+          <Reveal key={value.title} delay={index * 130}>
+            <div className="flex flex-col items-start rounded-[12px] border border-[rgba(153,130,0,0.1)] bg-[rgba(255,255,255,0.95)] p-[32px] transition-transform duration-300 ease-[cubic-bezier(0.22,1,0.36,1)] hover:scale-[1.04] lg:p-[48px]">
+              <div className="flex size-[45.7px] items-center justify-center rounded-[10.4px] bg-[#fff099]">
+                <Image src={value.icon} alt="" width={23} height={23} />
+              </div>
+              <p className="mt-[15px] text-[17.7px] font-semibold text-[#1c1c18]">
+                {value.title}
+              </p>
+              <p className="mt-[4px] text-[14.5px] leading-[22.5px] text-[#54564c]">
+                {value.text}
+              </p>
             </div>
-            <p className="mt-[15px] text-[17.7px] font-semibold text-[#1c1c18]">
-              {value.title}
-            </p>
-            <p className="mt-[4px] text-[14.5px] leading-[22.5px] text-[#54564c]">
-              {value.text}
-            </p>
           </Reveal>
         ))}
       </div>

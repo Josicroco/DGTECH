@@ -50,13 +50,13 @@ export default function Hero() {
         >
           <a
             href="#sobre"
-            className="flex h-[69px] w-[259px] items-center justify-center rounded-[10.469px] border border-[rgba(225,213,48,0.33)] bg-[#ffd900] text-[16px] font-semibold text-[#241e00] transition-opacity hover:opacity-90"
+            className="flex h-[69px] w-[259px] items-center justify-center rounded-[10.469px] border border-[rgba(225,213,48,0.33)] bg-[#ffd900] text-[16px] font-semibold text-[#241e00] transition-transform duration-300 ease-[cubic-bezier(0.22,1,0.36,1)] hover:scale-[1.05]"
           >
             Conheça a DG Tech
           </a>
           <a
             href="#servicos"
-            className="flex h-[69px] w-[171px] items-center justify-center gap-[11.633px] rounded-[10.469px] border border-[rgba(0,0,0,0.05)] bg-[#fffceb] text-[16px] font-semibold text-[#241e00] transition-opacity hover:opacity-90"
+            className="flex h-[69px] w-[171px] items-center justify-center gap-[11.633px] rounded-[10.469px] border border-[rgba(0,0,0,0.05)] bg-[#fffceb] text-[16px] font-semibold text-[#241e00] transition-transform duration-300 ease-[cubic-bezier(0.22,1,0.36,1)] hover:scale-[1.05]"
           >
             Saiba mais
             <Image
