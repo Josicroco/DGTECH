@@ -22,7 +22,7 @@ export default function MissionVision() {
         {CARDS.map((card, index) => (
           <Reveal
             key={card.number}
-            delay={index * 90}
+            delay={index * 130}
             className={`${card.bg} px-6 py-10 lg:px-[49px] lg:py-[49px]`}
           >
             <div className="flex items-center gap-4">

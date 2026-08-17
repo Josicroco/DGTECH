@@ -17,13 +17,13 @@ export default function AboutUs() {
           </Reveal>
           <Reveal
             as="h2"
-            delay={80}
+            delay={130}
             className="mt-[18px] text-[32px] tracking-[-0.6px] text-[#1c1c18] lg:text-[42px]"
           >
             Quem somos
           </Reveal>
           <Reveal
-            delay={160}
+            delay={260}
             className="mt-[24px] flex flex-col gap-[23px] text-[16px] leading-[23px] text-[#3b3c35] lg:text-[18px]"
           >
             <p>
@@ -45,7 +45,7 @@ export default function AboutUs() {
           </Reveal>
         </div>
 
-        <Reveal delay={120} className="flex flex-col gap-[13px]">
+        <Reveal delay={130} className="flex flex-col gap-[13px]">
           <div className="flex gap-[12px]">
             <div className="relative h-[170px] w-[70.8%] overflow-hidden rounded-[14px] sm:h-[225px]">
               <Image

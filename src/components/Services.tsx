@@ -58,7 +58,7 @@ export default function Services() {
       </Reveal>
       <Reveal
         as="h2"
-        delay={80}
+        delay={130}
         className="mt-[16px] text-[32px] tracking-[-0.6px] text-[#1c1c18] lg:text-[42px]"
       >
         Áreas de atuação
@@ -68,7 +68,7 @@ export default function Services() {
         {SERVICES.map((service, index) => (
           <Reveal
             key={service.title}
-            delay={(index % 4) * 80}
+            delay={(index % 4) * 130}
             className="rounded-[12px] border-[0.96px] border-[#f0ecd6] bg-white p-[27px]"
           >
             <div className="flex size-[44.2px] items-center justify-center rounded-[10.6px] bg-[#fff7cc]">

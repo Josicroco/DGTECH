@@ -23,7 +23,7 @@ export default function Hero() {
           </Reveal>
           <Reveal
             as="h1"
-            delay={80}
+            delay={140}
             className="text-[36px] leading-[1.15] tracking-[-1px] text-white lg:text-[58px] lg:leading-[62.64px]"
           >
             Engenharia elétrica que{" "}
@@ -33,7 +33,7 @@ export default function Hero() {
           </Reveal>
           <Reveal
             as="p"
-            delay={160}
+            delay={280}
             className="max-w-[552px] text-[16px] leading-[23px] text-white lg:text-[18px]"
           >
             Desde 2017, a DG Tech projeta e executa infraestrutura elétrica,{" "}
@@ -45,7 +45,7 @@ export default function Hero() {
         </div>
 
         <Reveal
-          delay={240}
+          delay={420}
           className="flex flex-wrap items-center justify-center gap-[9px]"
         >
           <a

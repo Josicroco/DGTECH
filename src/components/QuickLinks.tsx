@@ -38,7 +38,7 @@ export default function QuickLinks() {
         {CARDS.map((card, index) => (
           <Reveal
             key={card.title}
-            delay={index * 90}
+            delay={index * 130}
             className="flex w-full flex-col items-start lg:w-[320px]"
           >
             <div className="flex w-full flex-col items-start gap-[22px]">

@@ -17,13 +17,13 @@ export default function Careers() {
           </Reveal>
           <Reveal
             as="h2"
-            delay={80}
+            delay={130}
             className="mt-[26px] text-[32px] tracking-[-0.6px] text-[#241e00] lg:text-[42px]"
           >
             Nosso time
           </Reveal>
           <Reveal
-            delay={160}
+            delay={260}
             className="mt-[26px] flex flex-col gap-[28px] text-[16px] leading-[28px] text-[#241e00] lg:text-[18px]"
           >
             <p>
@@ -41,7 +41,7 @@ export default function Careers() {
         </div>
 
         <Reveal
-          delay={120}
+          delay={130}
           className="mx-auto w-full max-w-[460px] rounded-[20px] bg-white p-6"
         >
           <div className="relative flex flex-col items-center">

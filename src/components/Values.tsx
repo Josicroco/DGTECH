@@ -41,7 +41,7 @@ export default function Values() {
         </Reveal>
         <Reveal
           as="h2"
-          delay={80}
+          delay={130}
           className="mt-[16px] text-[32px] text-[#1c1c18] lg:text-[42px]"
         >
           Valores da DGTech
@@ -52,7 +52,7 @@ export default function Values() {
         {VALUES.map((value, index) => (
           <Reveal
             key={value.title}
-            delay={index * 80}
+            delay={index * 130}
             className="flex flex-col items-start rounded-[12px] border border-[rgba(153,130,0,0.1)] bg-[rgba(255,255,255,0.95)] p-[32px] lg:p-[48px]"
           >
             <div className="flex size-[45.7px] items-center justify-center rounded-[10.4px] bg-[#fff099]">

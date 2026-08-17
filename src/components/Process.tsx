@@ -29,7 +29,7 @@ export default function Process() {
         </Reveal>
         <Reveal
           as="h2"
-          delay={80}
+          delay={130}
           className="mt-[13px] text-[32px] text-white lg:text-[42px]"
         >
           Como trabalhamos
@@ -39,7 +39,7 @@ export default function Process() {
           {STEPS.map((step, index) => (
             <Reveal
               key={step.number}
-              delay={index * 80}
+              delay={index * 130}
               className="flex flex-col items-center gap-[16px] lg:w-[220px]"
             >
               <span className="flex size-[47.4px] items-center justify-center rounded-full bg-[#ffd900] font-mono font-medium text-[17.8px] text-[#241e00]">
