@@ -28,14 +28,14 @@ export default function Header() {
             <a
               key={link.label}
               href={link.href}
-              className="font-medium text-[14px] text-[#3b3c35] transition-opacity hover:opacity-70"
+              className="inline-block font-medium text-[14px] text-[#3b3c35] transition-transform duration-300 ease-[cubic-bezier(0.22,1,0.36,1)] hover:scale-[1.08] hover:text-[#1c1c18]"
             >
               {link.label}
             </a>
           ))}
           <a
             href="#trabalhe-conosco"
-            className="flex items-center gap-[10px] rounded-[9px] bg-[#ffd900] px-6 py-[12px] font-medium text-[14px] text-[#241e00] transition-opacity hover:opacity-90"
+            className="flex items-center gap-[10px] rounded-[9px] bg-[#ffd900] px-6 py-[12px] font-medium text-[14px] text-[#241e00] transition-transform duration-300 ease-[cubic-bezier(0.22,1,0.36,1)] hover:scale-[1.05]"
           >
             Trabalhe Conosco
             <Image
