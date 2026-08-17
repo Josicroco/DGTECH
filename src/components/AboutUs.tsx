@@ -8,7 +8,7 @@ export default function AboutUs() {
     >
       <div className="grid gap-12 lg:grid-cols-2 lg:gap-[86px]">
         <div className="flex flex-col items-start">
-          <p className="text-[13px] font-semibold tracking-[1.4px] text-[#998200] uppercase">
+          <p className="font-mono text-[13px] font-semibold tracking-[1.4px] text-[#998200] uppercase">
             {"//Sobre"}
           </p>
           <h2 className="mt-[18px] text-[32px] tracking-[-0.6px] text-[#1c1c18] lg:text-[42px]">

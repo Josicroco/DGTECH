@@ -14,7 +14,7 @@ export default function Hero() {
 
       <div className="relative z-10 flex w-full max-w-[764px] flex-col items-center gap-[18px] px-6 text-center">
         <div className="flex w-full flex-col items-center gap-[14px]">
-          <p className="text-[10px] font-semibold tracking-[1.4px] text-[#fffae6] uppercase">
+          <p className="font-mono text-[10px] font-semibold tracking-[1.4px] text-[#fffae6] uppercase">
             {"//Engenharia elétrica & automação"}
           </p>
           <h1 className="text-[36px] leading-[1.15] tracking-[-1px] text-white lg:text-[58px] lg:leading-[62.64px]">

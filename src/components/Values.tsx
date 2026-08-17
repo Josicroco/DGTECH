@@ -32,7 +32,7 @@ export default function Values() {
   return (
     <section className="mx-auto w-full max-w-[1344px] px-6 py-16 lg:px-0 lg:py-[70px]">
       <div className="flex flex-col items-center text-center">
-        <p className="text-[13px] font-medium tracking-[1.4px] text-[#998200] uppercase">
+        <p className="font-mono text-[13px] font-medium tracking-[1.4px] text-[#998200] uppercase">
           {"//valores"}
         </p>
         <h2 className="mt-[16px] text-[32px] text-[#1c1c18] lg:text-[42px]">

@@ -20,7 +20,7 @@ export default function Process() {
       <div className="absolute inset-0 bg-[rgba(36,30,0,0.57)]" />
 
       <div className="relative z-10 mx-auto flex w-full max-w-[1280px] flex-col items-center px-6 text-center lg:px-0">
-        <p className="text-[13px] font-medium tracking-[1.4px] text-white uppercase">
+        <p className="font-mono text-[13px] font-medium tracking-[1.4px] text-white uppercase">
           {"//trabalho"}
         </p>
         <h2 className="mt-[13px] text-[32px] text-white lg:text-[42px]">
@@ -33,7 +33,7 @@ export default function Process() {
               key={step.number}
               className="flex flex-col items-center gap-[16px] lg:w-[220px]"
             >
-              <span className="flex size-[47.4px] items-center justify-center rounded-full bg-[#ffd900] font-medium text-[17.8px] text-[#241e00]">
+              <span className="flex size-[47.4px] items-center justify-center rounded-full bg-[#ffd900] font-mono font-medium text-[17.8px] text-[#241e00]">
                 {step.number}
               </span>
               <p className="text-[17.2px] leading-[25.8px] text-white">

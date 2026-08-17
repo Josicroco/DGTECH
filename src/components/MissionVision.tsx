@@ -20,7 +20,7 @@ export default function MissionVision() {
         {CARDS.map((card) => (
           <div key={card.number} className={`${card.bg} px-6 py-10 lg:px-[49px] lg:py-[49px]`}>
             <div className="flex items-center gap-4">
-              <span className="flex h-[29px] items-center justify-center rounded-[8px] bg-[#ffd900] px-[13px] text-[14px] font-extrabold tracking-[1px] text-[#1c1c18]">
+              <span className="flex h-[29px] items-center justify-center rounded-[8px] bg-[#ffd900] px-[13px] font-manrope text-[14px] font-extrabold tracking-[1px] text-[#1c1c18]">
                 {card.number}
               </span>
               <h3 className="text-[20px] font-semibold text-[#241e00]">

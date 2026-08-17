@@ -8,7 +8,7 @@ export default function Careers() {
     >
       <div className="grid gap-10 overflow-hidden rounded-[12px] bg-[#ffd900] p-8 lg:grid-cols-2 lg:gap-0 lg:p-[78px_83px_78px_109px]">
         <div className="flex flex-col justify-center">
-          <p className="text-[12px] font-medium tracking-[1.4px] text-[#241e00] uppercase">
+          <p className="font-mono text-[12px] font-medium tracking-[1.4px] text-[#241e00] uppercase">
             {"//Trabalhe Conosco"}
           </p>
           <h2 className="mt-[26px] text-[32px] tracking-[-0.6px] text-[#241e00] lg:text-[42px]">

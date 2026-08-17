@@ -49,7 +49,7 @@ export default function Services() {
       id="servicos"
       className="mx-auto w-full max-w-[1280px] px-6 py-16 lg:px-0 lg:py-[100px]"
     >
-      <p className="text-[13px] font-medium tracking-[1.4px] text-[#998200] uppercase">
+      <p className="font-mono text-[13px] font-medium tracking-[1.4px] text-[#998200] uppercase">
         Serviços
       </p>
       <h2 className="mt-[16px] text-[32px] tracking-[-0.6px] text-[#1c1c18] lg:text-[42px]">

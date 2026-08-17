@@ -23,7 +23,7 @@ export default function Header() {
           />
         </Link>
 
-        <nav className="hidden items-center gap-[31px] lg:flex">
+        <nav className="hidden items-center gap-[31px] font-nav lg:flex">
           {NAV_LINKS.map((link) => (
             <a
               key={link.label}
