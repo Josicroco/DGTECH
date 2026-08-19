@@ -3,7 +3,7 @@ import Reveal from "@/components/Reveal";
 
 export default function Hero() {
   return (
-    <section className="relative flex h-[600px] items-center justify-center overflow-hidden lg:h-[915px]">
+    <section className="relative flex h-dvh min-h-[600px] items-center justify-center overflow-hidden lg:h-[915px] lg:min-h-0">
       <Image
         src="/images/hero-bg.png"
         alt="Equipe DG Tech"
