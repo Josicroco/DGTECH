@@ -13,8 +13,8 @@ export default function Hero() {
       />
       <div className="absolute inset-0 bg-[rgba(20,17,0,0.58)]" />
 
-      <div className="relative z-10 flex w-full max-w-[764px] flex-col items-center gap-[18px] px-6 text-center">
-        <div className="flex w-full flex-col items-center gap-[14px]">
+      <div className="relative z-10 flex w-full max-w-[764px] flex-col items-center gap-[34px] px-6 text-center lg:gap-[18px]">
+        <div className="flex w-full flex-col items-center gap-[22px] lg:gap-[14px]">
           <Reveal
             as="p"
             className="font-mono text-[10px] font-semibold tracking-[1.4px] text-[#fffae6] uppercase"

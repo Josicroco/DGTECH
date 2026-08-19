@@ -33,7 +33,7 @@ const CARDS = [
 
 export default function QuickLinks() {
   return (
-    <section className="relative z-10 mx-auto -mt-16 w-full max-w-[1280px] px-6 lg:-mt-[73px] lg:px-0">
+    <section className="relative z-10 mx-auto mt-6 w-full max-w-[1280px] px-6 lg:-mt-[73px] lg:px-0">
       <div className="grid gap-10 rounded-[12px] border border-black/8 bg-white px-6 py-10 shadow-[0_20px_50px_rgba(0,0,0,0.06)] sm:grid-cols-2 lg:flex lg:items-stretch lg:justify-between lg:gap-0 lg:px-[90px] lg:py-[45px]">
         {CARDS.map((card, index) => (
           <Reveal
