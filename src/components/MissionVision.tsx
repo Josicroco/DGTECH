@@ -18,12 +18,12 @@ const CARDS = [
 export default function MissionVision() {
   return (
     <section className="mx-auto w-full max-w-[1280px] px-6 py-10 lg:px-0">
-      <div className="grid overflow-hidden rounded-[25px] border border-black/[0.04] sm:grid-cols-2">
+      <div className="flex flex-col gap-4 sm:grid sm:grid-cols-2 sm:gap-0 sm:overflow-hidden sm:rounded-[25px] sm:border sm:border-black/[0.04]">
         {CARDS.map((card, index) => (
           <Reveal
             key={card.number}
             delay={index * 130}
-            className={`${card.bg} px-6 py-10 lg:px-[49px] lg:py-[49px]`}
+            className={`${card.bg} rounded-[16px] px-6 py-10 sm:rounded-none lg:px-[49px] lg:py-[49px]`}
           >
             <div className="flex items-center gap-4">
               <span className="flex h-[29px] items-center justify-center rounded-[8px] bg-[#ffd900] px-[13px] font-manrope text-[14px] font-extrabold tracking-[1px] text-[#1c1c18]">

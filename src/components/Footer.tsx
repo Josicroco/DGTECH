@@ -22,7 +22,7 @@ export default function Footer() {
           />
 
           <div className="grid grid-cols-2 gap-x-10 gap-y-10 sm:grid-cols-3 lg:flex lg:gap-[76px]">
-            <div className="flex flex-col items-start gap-[12px] text-[14px] text-[#d8d2a6]">
+            <div className="flex min-w-0 flex-col items-start gap-[12px] text-[14px] text-[#d8d2a6]">
               <p className="font-semibold">Menu Rápido</p>
               {QUICK_LINKS.map((link) => (
                 <a
@@ -35,23 +35,23 @@ export default function Footer() {
               ))}
             </div>
 
-            <div className="flex flex-col items-start gap-[12px] text-[14px] text-[#d8d2a6]">
+            <div className="flex min-w-0 flex-col items-start gap-[12px] text-[14px] text-[#d8d2a6]">
               <p className="font-semibold">Contato</p>
-              <div className="flex items-center gap-[12px]">
+              <div className="flex w-full items-center gap-[12px]">
                 <Image src="/icons/phone.svg" alt="" width={19} height={19} />
                 <p>(11) 2950-6731</p>
               </div>
-              <div className="flex items-center gap-[12px]">
-                <span className="flex size-[19px] items-center justify-center rounded-full border-[0.6px] border-[rgba(15,23,42,0.07)] bg-[#463b05]">
+              <div className="flex w-full min-w-0 items-center gap-[12px]">
+                <span className="flex size-[19px] shrink-0 items-center justify-center rounded-full border-[0.6px] border-[rgba(15,23,42,0.07)] bg-[#463b05]">
                   <Image src="/icons/mail.svg" alt="" width={10} height={10} />
                 </span>
-                <p>contato@dgprojetos.com</p>
+                <p className="min-w-0 break-words">contato@dgprojetos.com</p>
               </div>
             </div>
 
             <div className="flex flex-col items-start gap-[12px] text-[14px] text-[#d8d2a6]">
               <p className="font-semibold">Endereço</p>
-              <div className="flex items-start gap-[12px]">
+              <div className="flex w-full items-start gap-[12px]">
                 <span className="mt-[2px] flex size-[19px] shrink-0 items-center justify-center rounded-full border-[0.6px] border-[rgba(15,23,42,0.07)] bg-[#463b05]">
                   <Image src="/icons/pin.svg" alt="" width={10} height={10} />
                 </span>
