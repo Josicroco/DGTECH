@@ -5,18 +5,21 @@ import { useEffect, useRef, useState } from "react";
 const BASE_DELAY_MS = 120;
 
 const REVEAL_TRANSITION =
-  "transition-[opacity,transform] duration-[1000ms] ease-[cubic-bezier(0.22,1,0.36,1)] motion-reduce:transition-none motion-reduce:!translate-y-0 motion-reduce:!scale-100 motion-reduce:!opacity-100";
+  "transition-[opacity,transform,background-color,border-color] duration-[1000ms] ease-[cubic-bezier(0.22,1,0.36,1)] motion-reduce:transition-none motion-reduce:!translate-y-0 motion-reduce:!scale-100 motion-reduce:!opacity-100";
 
-export type RevealVariant = "up" | "card";
+export type RevealVariant = "up" | "card" | "card-active";
 
 const VARIANT_HIDDEN: Record<RevealVariant, string> = {
   up: "translate-y-8 opacity-0",
   card: "translate-y-6 scale-[0.94] opacity-0",
+  "card-active": "translate-y-6 scale-[0.94] opacity-0",
 };
 
 const VARIANT_VISIBLE: Record<RevealVariant, string> = {
   up: "translate-y-0 opacity-100",
   card: "translate-y-0 scale-100 opacity-100",
+  "card-active":
+    "translate-y-0 opacity-100 lg:scale-100 max-lg:scale-[1.03] max-lg:border-[rgba(153,130,0,0.28)] max-lg:bg-[#fff7cc]",
 };
 
 export function useScrollReveal<T extends HTMLElement = HTMLDivElement>(

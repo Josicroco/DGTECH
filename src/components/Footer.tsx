@@ -11,7 +11,7 @@ const QUICK_LINKS = [
 
 export default function Footer() {
   return (
-    <footer className="bg-[#241e00]">
+    <footer id="contato" className="bg-[#241e00]">
       <div className="mx-auto w-full max-w-[1290px] px-6 py-16 lg:px-0 lg:py-[69px]">
         <div className="flex flex-col items-start justify-between gap-12 lg:flex-row">
           <Image
