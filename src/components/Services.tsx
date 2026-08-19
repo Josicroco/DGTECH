@@ -69,6 +69,7 @@ export default function Services() {
           <Reveal
             key={service.title}
             delay={(index % 4) * 130}
+            variant="card"
             className="rounded-[12px] border-[0.96px] border-[#f0ecd6] bg-white p-[27px]"
           >
             <div className="flex size-[44.2px] items-center justify-center rounded-[10.6px] bg-[#fff7cc]">

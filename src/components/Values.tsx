@@ -1,3 +1,5 @@
+"use client";
+
 import Image from "next/image";
 import Reveal from "@/components/Reveal";
 
@@ -50,8 +52,11 @@ export default function Values() {
 
       <div className="mt-[50px] grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-5">
         {VALUES.map((value, index) => (
-          <Reveal key={value.title} delay={index * 130}>
-            <div className="flex flex-col items-start rounded-[12px] border border-[rgba(153,130,0,0.1)] bg-[rgba(255,255,255,0.95)] p-[32px] transition-transform duration-300 ease-[cubic-bezier(0.22,1,0.36,1)] hover:scale-[1.04] lg:p-[48px]">
+          <Reveal key={value.title} delay={index * 130} variant="card">
+            <div
+              onTouchStart={() => {}}
+              className="flex flex-col items-start rounded-[12px] border border-[rgba(153,130,0,0.1)] bg-[rgba(255,255,255,0.95)] p-[32px] transition-all duration-300 ease-[cubic-bezier(0.22,1,0.36,1)] hover:scale-[1.04] active:scale-[1.04] active:border-[rgba(153,130,0,0.25)] active:bg-[#fff7cc] lg:p-[48px]"
+            >
               <div className="flex size-[45.7px] items-center justify-center rounded-[10.4px] bg-[#fff099]">
                 <Image src={value.icon} alt="" width={23} height={23} />
               </div>

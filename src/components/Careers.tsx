@@ -42,6 +42,7 @@ export default function Careers() {
 
         <Reveal
           delay={130}
+          variant="card"
           className="mx-auto w-full max-w-[460px] rounded-[20px] bg-white p-6"
         >
           <div className="relative flex flex-col items-center">

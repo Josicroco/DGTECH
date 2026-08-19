@@ -23,6 +23,7 @@ export default function MissionVision() {
           <Reveal
             key={card.number}
             delay={index * 130}
+            variant="card"
             className={`${card.bg} rounded-[16px] px-6 py-10 sm:rounded-none lg:px-[49px] lg:py-[49px]`}
           >
             <div className="flex items-center gap-4">

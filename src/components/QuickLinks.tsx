@@ -39,6 +39,7 @@ export default function QuickLinks() {
           <Reveal
             key={card.title}
             delay={index * 130}
+            variant="card"
             className="flex w-full flex-col items-start lg:w-[320px]"
           >
             <div className="flex w-full flex-col items-start gap-[22px]">
