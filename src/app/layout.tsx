@@ -22,10 +22,47 @@ const manrope = Manrope({
   subsets: ["latin"],
 });
 
+const SITE_URL = "https://dgtechsp.com.br";
+const SITE_TITLE = "DG Tech | Engenharia elétrica & automação";
+const SITE_DESCRIPTION =
+  "Desde 2017, a DG Tech projeta e executa infraestrutura elétrica, automação e segurança para os maiores sites corporativos e galpões logísticos e industriais.";
+
 export const metadata: Metadata = {
-  title: "DG Tech | Engenharia elétrica & automação",
-  description:
-    "Desde 2017, a DG Tech projeta e executa infraestrutura elétrica, automação e segurança para os maiores sites corporativos e galpões logísticos e industriais.",
+  metadataBase: new URL(SITE_URL),
+  title: SITE_TITLE,
+  description: SITE_DESCRIPTION,
+  icons: {
+    icon: [
+      { url: "/icon-16x16.png", sizes: "16x16", type: "image/png" },
+      { url: "/icon-32x32.png", sizes: "32x32", type: "image/png" },
+      { url: "/icon-192x192.png", sizes: "192x192", type: "image/png" },
+      { url: "/icon-512x512.png", sizes: "512x512", type: "image/png" },
+    ],
+    apple: [{ url: "/apple-touch-icon.png", sizes: "180x180", type: "image/png" }],
+    shortcut: ["/favicon.ico"],
+  },
+  openGraph: {
+    title: SITE_TITLE,
+    description: SITE_DESCRIPTION,
+    url: SITE_URL,
+    siteName: "DG Tech",
+    locale: "pt_BR",
+    type: "website",
+    images: [
+      {
+        url: "/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "DG Tech",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: SITE_TITLE,
+    description: SITE_DESCRIPTION,
+    images: ["/og-image.png"],
+  },
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
