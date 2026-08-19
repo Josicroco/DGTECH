@@ -37,21 +37,32 @@ export default function Footer() {
 
             <div className="flex min-w-0 flex-col items-start gap-[12px] text-[14px] text-[#d8d2a6]">
               <p className="font-semibold">Contato</p>
-              <div className="flex w-full items-center gap-[12px]">
+              <a
+                href="tel:+551129506731"
+                className="flex w-full items-center gap-[12px] transition-opacity hover:opacity-70"
+              >
                 <Image src="/icons/phone.svg" alt="" width={19} height={19} />
                 <p>(11) 2950-6731</p>
-              </div>
-              <div className="flex w-full min-w-0 items-center gap-[12px]">
+              </a>
+              <a
+                href="mailto:contato@dgprojetos.com"
+                className="flex w-full min-w-0 items-center gap-[12px] transition-opacity hover:opacity-70"
+              >
                 <span className="flex size-[19px] shrink-0 items-center justify-center rounded-full border-[0.6px] border-[rgba(15,23,42,0.07)] bg-[#463b05]">
                   <Image src="/icons/mail.svg" alt="" width={10} height={10} />
                 </span>
                 <p className="min-w-0 break-words">contato@dgprojetos.com</p>
-              </div>
+              </a>
             </div>
 
             <div className="flex flex-col items-start gap-[12px] text-[14px] text-[#d8d2a6]">
               <p className="font-semibold">Endereço</p>
-              <div className="flex w-full items-start gap-[12px]">
+              <a
+                href="https://www.google.com/maps/search/?api=1&query=R.+Vicente+Leporace%2C+525+-+Campo+Belo%2C+S%C3%A3o+Paulo+-+SP%2C+04619-031"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex w-full items-start gap-[12px] transition-opacity hover:opacity-70"
+              >
                 <span className="mt-[2px] flex size-[19px] shrink-0 items-center justify-center rounded-full border-[0.6px] border-[rgba(15,23,42,0.07)] bg-[#463b05]">
                   <Image src="/icons/pin.svg" alt="" width={10} height={10} />
                 </span>
@@ -59,7 +70,7 @@ export default function Footer() {
                   R. Vicente Leporace, 525 · Campo Belo, São Paulo - SP ·
                   04619-031
                 </p>
-              </div>
+              </a>
             </div>
           </div>
         </div>
