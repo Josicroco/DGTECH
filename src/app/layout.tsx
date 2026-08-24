@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Albert_Sans, Plus_Jakarta_Sans, Kode_Mono, Manrope } from "next/font/google";
+import PortfolioModal from "@/components/PortfolioModal";
 import "./globals.css";
 
 const albertSans = Albert_Sans({
@@ -71,7 +72,10 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       lang="pt-BR"
       className={`${albertSans.variable} ${plusJakartaSans.variable} ${kodeMono.variable} ${manrope.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="min-h-full flex flex-col">
+        {children}
+        <PortfolioModal />
+      </body>
     </html>
   );
 }

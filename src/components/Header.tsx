@@ -3,6 +3,7 @@
 import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { OPEN_PORTFOLIO_EVENT } from "@/components/PortfolioModal";
 
 const NAV_LINKS = [
   { label: "Home", href: "/" },
@@ -14,6 +15,16 @@ const NAV_LINKS = [
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const handleNavClick = (
+    event: React.MouseEvent<HTMLAnchorElement>,
+    href: string,
+  ) => {
+    if (href === "#portfolio") {
+      event.preventDefault();
+      window.dispatchEvent(new CustomEvent(OPEN_PORTFOLIO_EVENT));
+    }
+  };
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 flex justify-center px-6 pt-6 lg:px-[174px] lg:pt-[56px]">
@@ -34,6 +45,7 @@ export default function Header() {
               <a
                 key={link.label}
                 href={link.href}
+                onClick={(event) => handleNavClick(event, link.href)}
                 className="inline-block font-medium text-[14px] text-[#3b3c35] transition-transform duration-300 ease-[cubic-bezier(0.22,1,0.36,1)] hover:scale-[1.08] hover:text-[#1c1c18]"
               >
                 {link.label}
@@ -89,7 +101,10 @@ export default function Header() {
             <a
               key={link.label}
               href={link.href}
-              onClick={() => setIsMenuOpen(false)}
+              onClick={(event) => {
+                handleNavClick(event, link.href);
+                setIsMenuOpen(false);
+              }}
               className="border-b border-[rgba(239,235,214,0.61)] px-6 py-4 text-[15px] font-medium text-[#3b3c35] last:border-b-0 active:bg-[#fff7cc]"
             >
               {link.label}

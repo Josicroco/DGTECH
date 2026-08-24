@@ -1,4 +1,7 @@
+"use client";
+
 import Image from "next/image";
+import { OPEN_PORTFOLIO_EVENT } from "@/components/PortfolioModal";
 
 const QUICK_LINKS = [
   { label: "Home", href: "/" },
@@ -28,6 +31,12 @@ export default function Footer() {
                 <a
                   key={link.label}
                   href={link.href}
+                  onClick={(event) => {
+                    if (link.href === "#portfolio") {
+                      event.preventDefault();
+                      window.dispatchEvent(new CustomEvent(OPEN_PORTFOLIO_EVENT));
+                    }
+                  }}
                   className="transition-opacity hover:opacity-70"
                 >
                   {link.label}
