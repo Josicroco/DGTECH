@@ -36,6 +36,14 @@ export default function PortfolioModal() {
         } else {
           setIsOpen(false);
         }
+        return;
+      }
+      if (activeIndex === null) return;
+      if (event.key === "ArrowLeft" && activeIndex > 0) {
+        setActiveIndex(activeIndex - 1);
+      }
+      if (event.key === "ArrowRight" && activeIndex < PORTFOLIO_IMAGES.length - 1) {
+        setActiveIndex(activeIndex + 1);
       }
     };
     window.addEventListener("keydown", onKeyDown);
