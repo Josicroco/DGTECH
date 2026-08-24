@@ -106,14 +106,14 @@ export default function PortfolioModal() {
 
       {activeIndex !== null && (
         <div
-          className="fixed inset-0 z-[110] flex items-center justify-center bg-black/90 px-4 py-10"
+          className="fixed inset-0 z-[110] flex items-center justify-center bg-black/90 p-2 sm:px-4 sm:py-10"
           onClick={() => setActiveIndex(null)}
         >
           <button
             type="button"
             aria-label="Fechar imagem"
             onClick={() => setActiveIndex(null)}
-            className="absolute top-6 right-6 flex size-[40px] items-center justify-center rounded-[10px] border border-white/20 bg-white/10 text-white transition-transform duration-300 ease-[cubic-bezier(0.22,1,0.36,1)] hover:scale-[1.08]"
+            className="absolute top-4 right-4 z-30 flex size-[44px] items-center justify-center rounded-[10px] border border-white/20 bg-white/10 text-white transition-transform duration-300 ease-[cubic-bezier(0.22,1,0.36,1)] hover:scale-[1.08] sm:top-6 sm:right-6"
           >
             <span className="text-[20px] leading-none">×</span>
           </button>
@@ -126,7 +126,7 @@ export default function PortfolioModal() {
                 event.stopPropagation();
                 setActiveIndex((current) => (current !== null ? current - 1 : current));
               }}
-              className="absolute left-4 flex size-[44px] items-center justify-center rounded-full border border-white/20 bg-white/10 text-white transition-transform duration-300 ease-[cubic-bezier(0.22,1,0.36,1)] hover:scale-[1.08] sm:left-8"
+              className="absolute left-2 z-30 flex size-[48px] items-center justify-center rounded-full border border-white/20 bg-white/10 text-white transition-transform duration-300 ease-[cubic-bezier(0.22,1,0.36,1)] hover:scale-[1.08] sm:left-8"
             >
               <span className="text-[20px] leading-none">‹</span>
             </button>
@@ -140,14 +140,14 @@ export default function PortfolioModal() {
                 event.stopPropagation();
                 setActiveIndex((current) => (current !== null ? current + 1 : current));
               }}
-              className="absolute right-4 flex size-[44px] items-center justify-center rounded-full border border-white/20 bg-white/10 text-white transition-transform duration-300 ease-[cubic-bezier(0.22,1,0.36,1)] hover:scale-[1.08] sm:right-8"
+              className="absolute right-2 z-30 flex size-[48px] items-center justify-center rounded-full border border-white/20 bg-white/10 text-white transition-transform duration-300 ease-[cubic-bezier(0.22,1,0.36,1)] hover:scale-[1.08] sm:right-8"
             >
               <span className="text-[20px] leading-none">›</span>
             </button>
           )}
 
           <div
-            className="relative h-[80vh] w-full max-w-[900px]"
+            className="relative z-0 h-[100dvh] w-screen sm:h-[85vh] sm:w-full sm:max-w-[900px]"
             onClick={(event) => event.stopPropagation()}
           >
             <Image
@@ -155,7 +155,7 @@ export default function PortfolioModal() {
               alt={PORTFOLIO_IMAGES[activeIndex].alt}
               fill
               className="object-contain"
-              sizes="900px"
+              sizes="100vw"
               priority
             />
           </div>
