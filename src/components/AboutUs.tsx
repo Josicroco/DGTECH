@@ -94,7 +94,7 @@ export default function AboutUs() {
               <div className="absolute bottom-[10px] left-[10px] flex items-center gap-2 rounded-[8px] border border-[rgba(216,210,166,0.44)] bg-white px-3 py-2">
                 <span className="size-[7px] rounded-[4px] bg-[#ffe866]" />
                 <p className="text-[9px] text-[#54564c] uppercase">
-                  <span className="font-bold">2027 -</span> ano de fundação
+                  <span className="font-bold">2017 -</span> ano de fundação
                 </p>
               </div>
             </div>
