@@ -71,7 +71,7 @@ export default function Careers() {
             valorizam precisão, responsabilidade e trabalho bem feito.
           </p>
           <a
-            href="mailto:contato@dgtech.com.br"
+            href="mailto:rh.cv@dgprojetos.com"
             className="mt-[18px] flex items-center justify-center gap-[5px] rounded-[10px] bg-[#ffd900] py-[18px] text-[15.5px] font-medium text-[#241e00] transition-transform duration-300 ease-[cubic-bezier(0.22,1,0.36,1)] hover:scale-[1.03]"
           >
             Enviar currículo
